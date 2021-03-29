@@ -2,6 +2,10 @@
 
 # Memento pattern
 Gives the ability to revert an object back to a previous state.
+- Defensive programming especially for programs that do not implicitly store state
+## Scenario
+## Example
+Programs that have an undo functionality e.g. make changes in notepad and without saving try to undo and notice the typed text was reverted to a previous state
 
 # Factory pattern
 
