@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.218
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starbucks.App", "Starbucks.App\Starbucks.App.csproj", "{90C65985-9A21-4A5D-9689-8D18FD819CAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Starbucks.ConsoleApp", "Starbucks.App\Starbucks.ConsoleApp.csproj", "{90C65985-9A21-4A5D-9689-8D18FD819CAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
