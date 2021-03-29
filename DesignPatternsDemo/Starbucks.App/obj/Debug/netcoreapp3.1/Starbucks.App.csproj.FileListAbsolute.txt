@@ -1,0 +1,13 @@
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\bin\Debug\netcoreapp3.1\Starbucks.App.exe
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\bin\Debug\netcoreapp3.1\Starbucks.App.deps.json
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\bin\Debug\netcoreapp3.1\Starbucks.App.runtimeconfig.json
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\bin\Debug\netcoreapp3.1\Starbucks.App.runtimeconfig.dev.json
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\bin\Debug\netcoreapp3.1\Starbucks.App.dll
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\bin\Debug\netcoreapp3.1\Starbucks.App.pdb
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\obj\Debug\netcoreapp3.1\Starbucks.App.csprojAssemblyReference.cache
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\obj\Debug\netcoreapp3.1\Starbucks.App.AssemblyInfoInputs.cache
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\obj\Debug\netcoreapp3.1\Starbucks.App.AssemblyInfo.cs
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\obj\Debug\netcoreapp3.1\Starbucks.App.csproj.CoreCompileInputs.cache
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\obj\Debug\netcoreapp3.1\Starbucks.App.dll
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\obj\Debug\netcoreapp3.1\Starbucks.App.pdb
+c:\emtosa\demo\DesignPatternsDemo\Starbucks.App\obj\Debug\netcoreapp3.1\Starbucks.App.genruntimeconfig.cache
