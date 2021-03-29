@@ -1,7 +1,10 @@
 # Introduction
-Design patterns are mostly language specific (Hassan Habib)[]
+
+# Memento pattern
+Gives the ability to revert an object back to a previous state.
 
 # Factory pattern
+
 When implementing this pattern, the focus is on building the or the product.
 
 ## Scenario
