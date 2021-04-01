@@ -30,6 +30,8 @@ namespace CleanArchitecture.Core.Services
             {
                 // read from the queue
                 await _queueReceiver.GetMessageFromQueue("");
+
+                // do some work
             }
             catch (Exception ex)
             {
@@ -37,8 +39,6 @@ namespace CleanArchitecture.Core.Services
                 // TODO: decide if you want to re-throw which will crash the worker service
                 //throw;
             }
-
-            // do some work
         }
     }
 }
