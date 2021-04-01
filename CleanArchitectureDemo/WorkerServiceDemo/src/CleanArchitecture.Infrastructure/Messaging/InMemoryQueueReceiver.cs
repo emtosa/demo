@@ -1,4 +1,5 @@
-﻿using CleanArchitecture.Core.Interfaces;
+﻿using Ardalis.GuardClauses;
+using CleanArchitecture.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace CleanArchitecture.Infrastructure.Messaging
     {
         public async Task<string> GetMessageFromQueue(string queueName)
         {
+            Guard.Against.NullOrWhiteSpace(queueName, nameof(queueName));
             return await Task.FromResult(string.Empty);
         }
     }
