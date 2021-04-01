@@ -1,7 +1,4 @@
-using CleanArchitecture.Core.Interfaces;
-using CleanArchitecture.Core.Services;
 using CleanArchitecture.Infrastructure.Messaging;
-using Moq;
 using System;
 using System.Threading.Tasks;
 using Xunit;

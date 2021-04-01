@@ -5,6 +5,7 @@ using CleanArchitecture.Infrastructure.Messaging;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
+using CleanArchitecture.Core.Settings;
 
 namespace CleanArchitecture.Worker
 {
@@ -28,6 +29,10 @@ namespace CleanArchitecture.Worker
                     var workerSettings = new WorkerSettings();
                     hostContext.Configuration.Bind(nameof(WorkerSettings), workerSettings);
                     services.AddSingleton(workerSettings);
+
+                    var entryPointSettings = new EntryPointSettings();
+                    hostContext.Configuration.Bind(nameof(EntryPointSettings), entryPointSettings);
+                    services.AddSingleton(entryPointSettings);
 
                     services.AddHostedService<Worker>();
                 });

@@ -1,8 +1,6 @@
 ﻿using CleanArchitecture.Core.Interfaces;
+using CleanArchitecture.Core.Settings;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CleanArchitecture.Core.Services
@@ -10,14 +8,17 @@ namespace CleanArchitecture.Core.Services
     public class EntryPointService : IEntryPointService
     {
         private readonly ILoggerAdapter<EntryPointService> _logger;
+        private readonly EntryPointSettings settings;
         private readonly IQueueReceiver _queueReceiver;
         private readonly IQueueSender _queueSender;
 
         public EntryPointService(ILoggerAdapter<EntryPointService> logger,
+            EntryPointSettings settings,
             IQueueReceiver queueReceiver,
             IQueueSender queueSender)
         {
             _logger = logger;
+            this.settings = settings;
             _queueReceiver = queueReceiver;
             _queueSender = queueSender;
         }
@@ -29,7 +30,7 @@ namespace CleanArchitecture.Core.Services
             try
             {
                 // read from the queue
-                await _queueReceiver.GetMessageFromQueue("");
+                await _queueReceiver.GetMessageFromQueue(this.settings.ReceivingQueueName);
 
                 // do some work
             }
