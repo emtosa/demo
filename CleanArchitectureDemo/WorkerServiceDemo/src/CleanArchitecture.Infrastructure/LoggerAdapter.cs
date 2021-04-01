@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Infrastructure.Interfaces;
+﻿using CleanArchitecture.Core.Interfaces;
 using Microsoft.Extensions.Logging;
 using System;
 

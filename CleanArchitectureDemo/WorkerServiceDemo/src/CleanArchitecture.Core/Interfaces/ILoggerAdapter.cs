@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CleanArchitecture.Infrastructure.Interfaces
+namespace CleanArchitecture.Core.Interfaces
 {
     // Helps if you need to confirm logging is happening
     // https://ardalis.com/testing-logging-in-aspnet-core/
