@@ -1,13 +1,30 @@
 namespace GradeBook
 {
+    using System;
     using System.Collections.Generic;
-    class Book
+    public class Book
     {
         private List<double> grades;
         private string name;
         private double lowestGrade = double.MaxValue;
         private double highestGrade = double.MinValue;
-        private double averageGrade = 0.0;
+
+        public double Average
+        {
+            get
+            {
+                var result = 0.0;
+                if (grades.Count > 0)
+                {
+                    foreach (var grade in grades)
+                    {
+                        result += grade;
+                    }
+                    result /= grades.Count;
+                }
+                return result;
+            }
+        }
 
         public Book(string name)
         {
@@ -20,28 +37,20 @@ namespace GradeBook
             grades.Add(grade);
         }
 
-        public void ShowStatistics()
+        public Statistics GetStatistics()
         {
-            var result = 0.0;
-            foreach(var grade in grades){
-                // get lowest grade
-                if (grade < lowestGrade)
-                {
-                    lowestGrade = grade;
-                }
-                // highest grade
-                if (grade > highestGrade)
-                {
-                    highestGrade = grade;
-                }
-                result += grade;
+            var result = new Statistics();
+            result.Average = 0.0;
+            result.Low = double.MaxValue;
+            result.High = double.MinValue;
+            foreach (var grade in grades)
+            {
+                result.Low = Math.Min(grade, result.Low);
+                result.High = Math.Max(grade, result.High);
+                result.Average += grade;
             }
-            // average grade
-            averageGrade = result / grades.Count;
-
-            System.Console.WriteLine($"The lowest grade is {lowestGrade}");
-            System.Console.WriteLine($"The highest grade is {highestGrade}");
-            System.Console.WriteLine($"The average grade is {averageGrade}");
+            result.Average = result.Average / grades.Count;
+            return result;
         }
     }
 }
