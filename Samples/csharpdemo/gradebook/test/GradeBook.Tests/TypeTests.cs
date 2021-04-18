@@ -3,19 +3,46 @@ namespace GradeBook.Tests
     using System;
     using Xunit;
 
+
+    public class Person
+    {
+
+    }
+
+    public struct Point
+    {
+
+    }
+
     public class TypeTests
     {
+
+        [Fact]
+        public void StringsBehaveLikeValueTypes()
+        {
+            string name = "Tosa";
+            var upper = MakeUppercase(name);
+
+            Assert.Equal("Tosa", name);
+            Assert.Equal("TOSA", upper);
+        }
+
+        private string MakeUppercase(string parameter)
+        {
+            return parameter.ToUpper();
+        }
+
         [Fact]
         public void ValueTypeCanPassByRef()
         {
             var x = GetInt();
             SetIntByRef(ref x);
-            
+
             Assert.Equal(42, x);
         }
-        private void SetIntByRef(ref int x)
+        private void SetIntByRef(ref int z)
         {
-            x = 42;
+            z = 42;
         }
 
         [Fact]
