@@ -26,10 +26,20 @@ namespace GradeBook
             }
         }
 
+        public string Name
+        {
+            set {
+                name = value;
+            }
+            get {
+                return name;
+            }
+        }
+
         public Book(string name)
         {
             grades = new List<double>();
-            this.name = name;
+            Name = name;
         }
 
         public void AddGrade(double grade)
