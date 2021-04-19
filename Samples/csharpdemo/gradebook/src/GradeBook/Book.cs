@@ -2,13 +2,13 @@ namespace GradeBook
 {
     using System;
     using System.Collections.Generic;
+
+    public delegate void GradeAddedDelegate(object sender, EventArgs args);
+
     public class Book
     {
         private List<double> grades;
         private string name;
-        private double lowestGrade = double.MaxValue;
-        private double highestGrade = double.MinValue;
-
         public double Average
         {
             get
@@ -31,8 +31,9 @@ namespace GradeBook
             set;
             get;
         }
-
         readonly string category = "science";
+
+        public event GradeAddedDelegate GradeAdded;
 
         public Book(string name)
         {
@@ -65,6 +66,10 @@ namespace GradeBook
             if (grade >= 0 && grade <= 100)
             {
                 grades.Add(grade);
+                if (GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
             }
             else
             {
@@ -86,7 +91,7 @@ namespace GradeBook
             }
             result.Average = result.Average / grades.Count;
 
-            switch(result.Average)
+            switch (result.Average)
             {
                 case var d when d >= 90.0:
                     result.Letter = 'A';
