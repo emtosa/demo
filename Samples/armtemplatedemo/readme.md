@@ -23,5 +23,14 @@ Sample arm template for a storage account
     }
 }
 
+# pre-reqs
+install powershell 7.1
+install azure powershell
+
+# create sample arm templates
+create azure function
+create azure storage account
+
+
 # reference
 ARM templates tutorial - https://www.youtube.com/watch?v=Ge_Sp-1lWZ4&t=735s
