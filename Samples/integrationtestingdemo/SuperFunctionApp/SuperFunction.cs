@@ -12,7 +12,12 @@ namespace SuperFunctionApp
 {
 	public class SuperFunction
 	{
-		readonly IHitchhikerGuideToTheGalaxy _hitchhikerGuideToTheGalaxy = new HitchhikerGuideToTheGalaxy();
+		readonly IHitchhikerGuideToTheGalaxy _hitchhikerGuideToTheGalaxy;
+
+        public SuperFunction(IHitchhikerGuideToTheGalaxy hitchhikerGuideToTheGalaxy)
+        {
+			_hitchhikerGuideToTheGalaxy = hitchhikerGuideToTheGalaxy;
+        }
 
 		[FunctionName(nameof(AnswerToLifeTheUniverseAndEverything))]
 		public IActionResult AnswerToLifeTheUniverseAndEverything(
@@ -29,7 +34,12 @@ namespace SuperFunctionApp
 
 	public class HitchhikerGuideToTheGalaxy : IHitchhikerGuideToTheGalaxy
 	{
-		readonly ISuperComputer _superComputer = new SuperComputer();
+		readonly ISuperComputer _superComputer;
+
+        public HitchhikerGuideToTheGalaxy(ISuperComputer superComputer)
+        {
+			_superComputer = superComputer;
+        }
 
 		public int GetTheAnswerToLifeTheUniverseAndEverything() => _superComputer.CalculateTheAnswerToLifeTheUniverseAndEverything();
 	}
