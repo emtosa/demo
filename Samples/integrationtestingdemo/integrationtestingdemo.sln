@@ -5,6 +5,8 @@ VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperFunctionApp", "SuperFunctionApp\SuperFunctionApp.csproj", "{DABA3EEF-6B14-45E9-8FFC-E2A1F4CD35E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperFunctionApp.IntegrationTests", "SuperFunctionApp.IntegrationTests\SuperFunctionApp.IntegrationTests.csproj", "{9371651A-FBC5-461F-BD72-5F0FFF195891}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DABA3EEF-6B14-45E9-8FFC-E2A1F4CD35E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DABA3EEF-6B14-45E9-8FFC-E2A1F4CD35E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DABA3EEF-6B14-45E9-8FFC-E2A1F4CD35E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9371651A-FBC5-461F-BD72-5F0FFF195891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9371651A-FBC5-461F-BD72-5F0FFF195891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9371651A-FBC5-461F-BD72-5F0FFF195891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9371651A-FBC5-461F-BD72-5F0FFF195891}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
